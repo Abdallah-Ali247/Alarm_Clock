@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Alarm Clock</title>
+        <link rel="stylesheet" href="css/styl.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Alarm Clock</h1>
+            <div class="clock-display">
+                <span id="current-time">--:--:--</span>
+            </div>
+            <form id="alarm-form">
+                <label for="time">Set Initial Time (HH:MM:SS):</label>
+                <input type="text" id="time" placeholder="e.g., 12:00:00" required>
+                
+                <label for="alarm-time">Set Alarm Time (HH:MM:SS):</label>
+                <input type="text" id="alarm-time" placeholder="e.g., 12:01:00" required>
+                
+                <button type="submit">Start Clock</button>
+                <button type="button" id="stop-button" disabled>Stop Clock</button>
+            </form>
+            <p id="alarm-status"></p>
+        </div>
+        <script type="module" src="js/main.js" defer></script>
+    </body>
+</html>

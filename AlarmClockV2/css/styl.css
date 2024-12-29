@@ -1,0 +1,149 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #000; /* Solid black background */
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-rendering: optimizeLegibility;
+}
+
+.container {
+    background: #1a1a1a; /* Dark gray for contrast */
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+    text-align: center;
+    width: 350px;
+    border: 2px solid #ffd700; /* Shiny gold border */
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: #ffd700; /* Gold for titles */
+    text-transform: uppercase;
+}
+
+.clock-display {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #ffd700; /* Shiny gold for the clock display */
+    letter-spacing: 2px;
+    background: rgba(255, 215, 0, 0.1); /* Slight gold tint background */
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ffd700; /* Gold border around the clock */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #ccc; /* Soft gray for labels */
+    text-align: left;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ffd700; /* Gold border for inputs */
+    border-radius: 6px;
+    background: #333; /* Dark background for input fields */
+    color: #ffd700; /* Gold text */
+    font-size: 16px;
+    outline: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+input:focus {
+    background: #444; /* Slightly lighter background on focus */
+    color: #fff; /* White text on focus */
+}
+
+button {
+    padding: 12px 15px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button[type="submit"] {
+    background: #ffd700; /* Shiny gold button */
+    color: #000; /* Black text */
+}
+
+button[type="submit"]:hover {
+    background: #e6c200; /* Slightly darker gold on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+button#stop-button {
+    background: #444; /* Dark gray stop button */
+    color: #ffd700; /* Gold text */
+}
+
+button#stop-button:hover {
+    background: #555; /* Slightly lighter gray on hover */
+}
+
+button:disabled {
+    background: rgba(255, 255, 255, 0.1); /* Subtle gray for disabled buttons */
+    color: #888;
+    cursor: not-allowed;
+}
+
+#alarm-status {
+    margin-top: 15px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#alarm-status.green {
+    color: #77dd77; /* Soft green */
+}
+
+#alarm-status.blue {
+    color: #89cff0; /* Soft blue */
+}
+
+#alarm-status.red {
+    color: #ff6961; /* Soft red */
+}
+
+/* Responsive Design */
+@media (max-width: 400px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .clock-display {
+        font-size: 36px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}
