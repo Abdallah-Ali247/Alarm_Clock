@@ -10,6 +10,13 @@ This project demonstrates object-oriented programming principles, including inhe
 
 ---
 
+## Screenshots
+
+### AlarmClockV2 UI
+![AlarmClockV2 Screenshot](AlarmClockV2/Screenshot.png)
+
+---
+
 ## Features
 
 ### AlarmClock
@@ -27,12 +34,6 @@ This project demonstrates object-oriented programming principles, including inhe
 
 ---
 
-## Screenshots
-
-### AlarmClockV2 UI
-![AlarmClockV2 Screenshot](AlarmClockV2/Screenshot.png)
-
----
 
 ## How to Use
 
