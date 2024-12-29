@@ -30,9 +30,7 @@ This project demonstrates object-oriented programming principles, including inhe
 ## Screenshots
 
 ### AlarmClockV2 UI
-![AlarmClockV2 Screenshot](path/to/screenshot.png)
-
-> Note: Replace `path/to/screenshot.png` with the actual path to your screenshot image.
+![AlarmClockV2 Screenshot](AlarmClockV2/Screenshot.png)
 
 ---
 
